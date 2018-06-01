@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".activity.WorkDoneManPower">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:text="Daily Site Report"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_item"
+            android:gravity="center"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Work Done Manpower"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/header_border"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tv_workname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:gravity="center"
+                                        android:text="WORK NAME"
+                                        android:textColor="@color/white"
+
+                                        />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="2">
+
+                                    <TableLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/header_border"
+                                        android:gravity="center">
+
+
+                                        <TextView
+                                            android:id="@+id/tv_skilled"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="SKILLED"
+                                            android:textColor="@color/white"
+
+                                            />
+
+
+                                    </TableLayout>
+
+                                    <TableLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center">
+
+                                        <TableRow
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/sub_header_border">
+
+                                            <TextView
+                                                android:id="@+id/tv_s_nos"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text="NO's"
+                                                android:textColor="@color/white" />
+
+
+                                        </TableRow>
+
+
+                                        <TableRow
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/sub_header_border"
+                                            android:paddingLeft="5dp"
+
+                                            android:paddingRight="5dp">
+
+                                            <TextView
+                                                android:id="@+id/tv_s_payment"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text="PAYMENT"
+                                                android:textColor="@color/white" />
+
+
+                                        </TableRow>
+
+                                        <!--</TableLayout>-->
+
+
+                                        <!-- </TableRow>-->
+
+                                    </TableLayout>
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TableLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/header_border"
+                                        android:gravity="center">
+
+
+                                        <TextView
+                                            android:id="@+id/tv_unskilled"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="UNSKILLED"
+                                            android:textColor="@color/white"
+
+                                            />
+
+
+                                    </TableLayout>
+
+                                    <TableLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center">
+
+                                        <TableRow
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/sub_header_border">
+
+                                            <TextView
+                                                android:id="@+id/tv_us_nos"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text="NO's"
+                                                android:textColor="@color/white"
+
+                                                />
+
+
+                                        </TableRow>
+
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/sub_header_border"
+                                            android:gravity="center"
+                                            android:paddingLeft="5dp"
+                                            android:paddingRight="5dp">
+
+                                            <TextView
+                                                android:id="@+id/tv_us_payment"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="40dp"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text="PAYMENT"
+                                                android:textColor="@color/white"
+
+
+                                                />
+
+
+                                        </TableRow>
+
+                                        <!--</TableLayout>-->
+
+
+                                        <!-- </TableRow>-->
+
+                                    </TableLayout>
+
+
+                                </TableRow>
+
+                                <TableRow
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/header_border"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tv_agency"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="AGENCY"
+                                        android:textColor="@color/white"
+
+                                        />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/header_border"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tv_amount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="AMOUNT"
+                                        android:textColor="@color/white"
+
+                                        />
+
+
+                                </TableRow>
+
+
+                            </TableLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center">
+
+                                    <Spinner
+                                        android:id="@+id/spinner_workname"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:singleLine="true"
+                                        android:textSize="15dp" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_s_nos"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:inputType="number"
+                                        android:singleLine="true" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_s_payment"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:inputType="number"
+                                        android:singleLine="true" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_us_nos"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:inputType="number"
+                                        android:singleLine="true" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <EditText
+                                        android:id="@+id/et_us_payment"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:inputType="number"
+                                        android:singleLine="true" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center">
+
+                                    <Spinner
+                                        android:id="@+id/et_agency"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:singleLine="true"
+                                        android:textSize="15dp" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/editor_border"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/et_amount"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:gravity="left"
+                                        android:padding="10dp"
+                                        android:singleLine="true"
+                                        android:textStyle="bold" />
+
+
+                                </TableRow>
+                            </TableLayout>
+                        </TableRow>
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btn_save_wdmp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:padding="5dp"
+                        android:text="SAVE"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btn_next_wdmp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button"
+                        android:padding="5dp"
+                        android:text="NEXT"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

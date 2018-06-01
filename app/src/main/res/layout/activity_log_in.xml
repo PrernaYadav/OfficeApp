@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:text="Login"
+        android:background="#015C57"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo_office"
+                    android:layout_marginBottom="30dp"/>
+
+                <EditText
+                    android:id="@+id/et_employee_id"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_shape"
+
+                    android:hint="Enter Employee Code"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_shape"
+                    android:hint="Enter Password"
+                    android:padding="10dp" />
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="sans-serif"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

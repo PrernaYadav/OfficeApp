@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".activity.TomorrowsPlanning">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:text="Daily Site Report"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_item_planing"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_item"
+            android:gravity="center"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="serif"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow Planning"/>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_tomorrowplanning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:id="@+id/layout_tommorrw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/header_border"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:id="@+id/tv_planned_work"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:text="PLANNED WORK" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/header_border">
+
+                                    <TableRow
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent">
+
+
+                                        <TextView
+                                            android:textColor="@color/white"
+                                            android:id="@+id/tv_requirement"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+android:layout_marginLeft="15dp"
+                                            android:layout_marginTop="25dp"
+                                            android:text="R\nE\nQ\nU\nI\nR\nE\nM\nE\nN\nT"
+                                            android:textSize="16dp" />
+                                    </TableRow>
+
+                                </TableLayout>
+
+                                <TableLayout
+                                    android:layout_marginLeft="-60dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <TableRow
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:weightSum="2">
+
+                                        <TableLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="fill_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/sub_header_border"
+                                            android:gravity="center">
+
+                                            <TableRow
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginLeft="10dp">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_machinery"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:paddingRight="15dp"
+                                                    android:text="MACHINERY" />
+
+                                            </TableRow>
+
+                                        </TableLayout>
+
+                                        <TableLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <TableRow
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/sub_header_border"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_machinery_type"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40dp"
+                                                    android:gravity="center"
+                                                    android:text="TYPE" />
+
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/sub_header_border"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_machinery_amount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40dp"
+                                                    android:gravity="center"
+                                                    android:paddingLeft="5dp"
+                                                    android:paddingRight="5dp"
+                                                    android:text="AMOUNT" />
+
+                                            </TableRow>
+
+
+                                        </TableLayout>
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/sub_header_border"
+                                        android:foregroundGravity="center"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:textColor="@color/white"
+                                            android:id="@+id/tv_manpower"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="MANPOWER" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/sub_header_border"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:textColor="@color/white"
+                                            android:id="@+id/tv_material"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="MATERIAL" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/sub_header_border"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:textColor="@color/white"
+                                            android:id="@+id/tv_fund"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:gravity="center"
+                                            android:text="FUND" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/sub_header_border"
+                                        android:weightSum="2">
+
+                                        <TableLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TableRow
+                                                android:layout_width="match_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_gravity="center">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_fundtv_fundrequiredfor"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:text="FUND\nREQUIRED\nFOR" />
+
+                                            </TableRow>
+
+                                        </TableLayout>
+
+                                        <TableLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TableRow
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/sub_header_border"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_fundrequiredfor_type"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="40dp"
+                                                    android:gravity="center"
+                                                    android:text="TYPE" />
+
+                                            </TableRow>
+
+                                            <TableRow
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/sub_header_border"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:textColor="@color/white"
+                                                    android:id="@+id/tv_fundrequiredfor_amount"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="40dp"
+                                                    android:gravity="center"
+                                                    android:text="AMOUNT" />
+
+                                            </TableRow>
+
+
+                                        </TableLayout>
+                                    </TableRow>
+
+
+                                </TableLayout>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            >
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_planned_work"
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_machnery_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_machnery_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="number"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_manpower"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <Spinner
+                                    android:id="@+id/et_material"
+                                    android:layout_width="180dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:singleLine="true">
+
+                                </Spinner>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_fund"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_frf_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/editor_border"
+                                android:gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_frf_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:background="@null"
+                                    android:singleLine="true" />
+
+                            </TableRow>
+
+
+                        </TableLayout>
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_save_tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:padding="5dp"
+                    android:text="SAVE"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_next_tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:padding="5dp"
+                    android:text="NEXT"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

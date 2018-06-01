@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Report"
+    tools:showIn="@layout/app_bar_report">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <TextView
+            android:id="@+id/text_ao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="AO No."
+            android:textSize="15dp" />
+
+
+            <Spinner
+            android:id="@+id/ao_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:autofillHints="select A/O"
+            android:background="@drawable/rounded_shape" />
+            <!-- <Spinner
+                 android:id="@+id/ao_spinner"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:autofillHints="select A/O"
+                 android:background="@drawable/rounded_shape"
+                 android:paddingLeft="25dp" />-->
+
+            <TextView
+                android:id="@+id/text_ao_date"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="AO Date"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/et_ao_data"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:paddingTop="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_shape"
+                android:paddingLeft="25dp" />
+            <TextView
+            android:id="@+id/text_project_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Project/Customer"
+            android:textSize="15dp" />
+
+            <TextView
+            android:id="@+id/et_project_customer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_shape"
+            android:paddingLeft="25dp" />
+
+            <TextView
+            android:id="@+id/text_site_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Site/Location"
+            android:textSize="15dp" />
+
+            <TextView
+            android:id="@+id/et_site_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="5dp"
+            android:background="@drawable/rounded_shape"
+            android:paddingLeft="25dp" />
+
+            <TextView
+            android:id="@+id/tv_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Scope"
+            android:textSize="15dp" />
+
+            <TextView
+            android:id="@+id/et_scope"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:paddingTop="5dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_shape"
+            android:paddingLeft="25dp" />
+
+            <TextView
+                android:id="@+id/text_completion_date"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Completion Date"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/et_completion_date"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:paddingTop="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_shape"
+                android:paddingLeft="25dp" />
+            <TextView
+                android:id="@+id/text_activity_date"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Activity Date"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/et_activity_date"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:paddingTop="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_shape"
+                android:paddingLeft="25dp" />
+
+            <TextView
+            android:id="@+id/text_work_ready_for_billing"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Work Ready For Billing"
+            android:textSize="15dp" />
+
+            <Spinner
+            android:id="@+id/spinner_work_ready_for_billing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+                android:visibility="visible"
+            android:background="@drawable/rounded_shape"
+            android:paddingLeft="25dp" />
+
+            <Spinner
+                android:id="@+id/spinner_work_ready_for_billing1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/rounded_shape"
+                android:paddingLeft="25dp" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:padding="5dp"
+                    android:text="SAVE"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:padding="5dp"
+                    android:text="NEXT"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

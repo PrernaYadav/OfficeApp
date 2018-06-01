@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <Button
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/btntransparent"
+        android:layout_gravity="right"
+        android:layout_marginEnd="15dp"
+        android:text="Edit"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_hp"/>
+    <Button
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="15dp"
+        android:background="@color/btntransparent"
+        android:text="Save"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_hp1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/sub_header_border"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_hindrance_from_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="HINDRANCE"
+                   />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editor_border">
+
+                <EditText
+                    android:id="@+id/et_hindrance_from_custumer_adap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:singleLine="true" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/sub_header_border"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_internal_issue"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="INTERNAL ISSUE/PROBLEM"
+                   />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editor_border">
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/et_internal_issue_adap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:singleLine="true" />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
